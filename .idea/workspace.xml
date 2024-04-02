@@ -5,12 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a5ebc77-ef55-40bf-8612-40e712a3b00c" name="Changes" comment="Go">
+      <change afterPath="$PROJECT_DIR$/GameStart/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/.idea/GameStart.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/callOfDuty.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/fifa.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/hollowKnight.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/minecraft.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/mortalKombat.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/overcooked.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/witcher3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Admins.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Banner.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Categorias.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Clientes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Copyright.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Vendas.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Banner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Rebase.Settings">
     <option name="NEW_BASE" value="main" />
@@ -40,27 +67,31 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2eYpxW4b7TUJV2mbkZOviTmo3UL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Menu.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Desktop/Gilberto_Costa_Cesae/PE_GilbertoCosta&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Banner.executor": "Run",
+    "Application.Menu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ASUS/Desktop/Gilberto_Costa_Cesae/RepoAlgoritmia/FichasJava"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "module"
     ]
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -100,6 +131,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Go" />
     <option name="LAST_COMMIT_MESSAGE" value="Go" />
   </component>
