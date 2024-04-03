@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a5ebc77-ef55-40bf-8612-40e712a3b00c" name="Changes" comment="Go">
-      <change afterPath="$PROJECT_DIR$/GameStart/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/.idea/GameStart.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/callOfDuty.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/fifa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/hollowKnight.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/minecraft.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/mortalKombat.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/overcooked.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/CatalogoGrafico/witcher3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Admins.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Banner.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Categorias.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Clientes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Copyright.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameStart/GameStart_Vendas.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Banner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LojaGameStart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +59,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Banner.executor": "Run",
+    "Application.LojaGameStart.executor": "Run",
     "Application.Menu.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
