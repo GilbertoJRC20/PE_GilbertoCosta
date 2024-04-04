@@ -169,7 +169,7 @@ public class LojaGameStart {
 
         // Declarar variáveis
         int opcao;
-        String tipoUtilizador, admin, cliente, editora = "";
+        String tipoUtilizador, admin, cliente, editora;
 
 
 
@@ -221,10 +221,10 @@ public class LojaGameStart {
                 case 5:
                     System.out.println("\n*** 5. Mostrar por Editora ***");
                     System.out.println("Que Editora deseja pesquisar?: ");
-                    String editora = input.nextLine();
                     editora = input.nextLine();
+                    //editora = input.nextLine();
 
-                    editoraPesquisa(matrizFicheiro, editora);
+                    pesquisarPorEditora(matrizFicheiro, editora);
 
                     break;
 
