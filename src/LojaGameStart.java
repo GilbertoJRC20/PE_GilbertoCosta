@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.PropertyPermission;
 import java.util.Scanner;
 
 public class LojaGameStart {
@@ -55,7 +54,7 @@ public class LojaGameStart {
         return numeroColunas;
     }
 
-    public static int contarLinhasFicheiro (String path) throws FileNotFoundException {
+    public static int contarLinhasFicheiro(String path) throws FileNotFoundException {
 
         int numeroLinhas = 0;
 
@@ -107,10 +106,31 @@ public class LojaGameStart {
 
     }
 
+
+    public static void somarValorTotal(String path) throws FileNotFoundException {
+        Scanner in = new Scanner( new File(path));
+
+        String linha = in.nextLine();  //Linha do cabecalho
+
+        double total = 0;
+
+        while (in.hasNextLine()) {
+            linha = in.nextLine();
+            String[] valor = linha.split(";");
+
+
+                total += Double.parseDouble(valor[5]);
+        }
+
+        System.out.println("Valor total das vendas é: " + total + " €");
+        in.close();
+    }
+
+
     /**
      * Método que, dado um género, imprime na consola todas as músicas desse género
      *
-     * @param matrizCompleta Matriz com as músicas todas
+     * @param matrizCompleta  Matriz com as músicas todas
      * @param editoraPesquisa Pesquisar por Editora
      */
     public static void pesquisarPorEditora(String[][] matrizCompleta, String editoraPesquisa) {
@@ -136,201 +156,401 @@ public class LojaGameStart {
 
     }
 
-    public static void main (String[]args) throws FileNotFoundException {
+    public static void jogoMaisCaro(String path) throws FileNotFoundException {
 
+        Scanner leitura = new Scanner(new File(path));
 
-            try {
+        String linha;
+        double valor = 0, jogoMaisCaro = 0;
+        String nome = "";
 
-                imprimirFicheiroConsola("GameStart/GameStart_Banner.csv");
+        while (leitura.hasNextLine()) {
 
-            } catch (FileNotFoundException e) {
+            // Ler linha do ficheiro para variável "linha"
+            linha = leitura.nextLine();
 
-                System.out.println("Ficheiro Não Encontrado...");
+            //Dividir a linha pela vírgula ","
+            String[] linhaDividida = linha.split(";");
 
+            //Se a linhaDividida[1] como inteiro MAIOR QUE idadeMaisVelha
+            if (Double.parseDouble(linhaDividida[5]) > jogoMaisCaro) {
+                // Atualizar variáveis para ficar com as informações da pessoa mais velha atual
+                jogoMaisCaro = Double.parseDouble(linhaDividida[5]);
+                nome = linhaDividida[4];
             }
 
+            System.out.println("O jogo mais caro é " + nome + "e custa " + jogoMaisCaro + " €");
 
-        // Caminho para o ficheiro
-        String path = "Ficheiros/exercicio_09.csv";
+        }
+    }
 
-        // Matriz completa
+
+
+    public static void main(String[] args) throws FileNotFoundException {
+
+        //Imprimir ficheiro de Banner
+            imprimirFicheiroConsola("GameStart/GameStart_Banner.csv");
+
+
+        //Caminho para o ficheiro
+        String path = "GameStart/GameStart_Vendas.csv";
+
+        //Matriz completa
         String[][] matrizFicheiro = lerFicheiroParaMatriz(path);
 
-        // imprimirMatrizStrings(matrizFicheiro);
+        //imprimirMatrizStrings(matrizFicheiro);
 
 
         //Saudação
-        System.out.println("✋\uD83D\uDE03 OLÁ ✋\uD83D\uDE03 BEM-VINDO À GAMESTART!\uD83C\uDF89\nA tua loja de videojogos favorita!\n");
+        System.out.println("✋\uD83D\uDE03 OLÁ ✋\uD83D\uDE03 BEM-VINDO À GAMESTART!\uD83C\uDF89\nA sua loja de videojogos favorita!\n");
 
 
         //Importar o scanner
         Scanner input = new Scanner(System.in);
 
 
-        // Declarar variáveis
-        int opcao;
-        String tipoUtilizador, admin, cliente, editora;
+        //Declarar variáveis
+        int opcao, utilizador, escolhaFicheiro;
+        String editora;
 
 
-
-
-        //Ler Tipo de Utilizador no Menu Login
-        do {
-            System.out.print("\nTipo de Utilizador (ADMIN || CLIENTE): ");
-            tipoUtilizador = input.next();
-        } while (!tipoUtilizador.equalsIgnoreCase("ADMIN") && !tipoUtilizador.equalsIgnoreCase("CLIENTE"));
-
-        //Loop Cliente
         do {
 
-            System.out.println("\nOlá e Bem-Vindo\n");
-
-            //Ler Opções Menu Cliente
-            System.out.println("*** 1. Novo Registo ***");
-            System.out.println("*** 2. Procurar Estacionamento ***");
-            System.out.println("*** 3. Catálogo de Jogos ***");
-            System.out.println("*** 4. Pré-Visualizar ***");
-            System.out.println("*** 5. Mostrar por Editora ***");
-            System.out.println("*** 6. Mostrar por Categoria ***");
-            System.out.println("*** 7. Recém-Chegado ***");
-            System.out.println("*** 8. Sair ***");
-
-            //Perguntar o que deseja fazer
-            System.out.print("\nO que deseja fazer?: ");
-            opcao = input.nextInt();
-
-
-            //Escolher a opções
-            switch (opcao) {
-                case 1:
-                    System.out.println("\n*** 1. Novo Registo ***");
-                    break;
-
-                case 2:
-                    System.out.println("\n*** 2. Procurar Estacionamento ***");
-                    break;
-
-                case 3:
-                    System.out.println("\n*** 3. Catálogo de Jogos ***");
-                    break;
-
-                case 4:
-                    System.out.println("\n*** 4. Pré-Visualizar ***");
-                    break;
-
-                case 5:
-                    System.out.println("\n*** 5. Mostrar por Editora ***");
-                    System.out.println("Que Editora deseja pesquisar?: ");
-                    editora = input.nextLine();
-                    //editora = input.nextLine();
-
-                    pesquisarPorEditora(matrizFicheiro, editora);
-
-                    break;
-
-                case 6:
-                    System.out.println("\n*** 6. Mostrar por Categoria ***");
-                    break;
-
-                case 7:
-                    System.out.println("\n*** 7. Recém-Chegado ***");
-                    break;
-
-                case 8:
-                    System.out.println("\n*** 8. Obrigado e Até à Próxima ***");
-                    break;
-
-                default:
-                    System.out.println("\nErro!!! Operação inválida!\n");
-                    break;
-            }
-        } while (opcao != 8);
-
-
-        //Loop Admin
-        do {
-
-            //Perguntar o que deseja fazer
-            System.out.println("\nBem-vindo de volta Chefe\n");
-
-
-            //Ler Opções Menu Administrador
-            System.out.println("*** 1. Consultar Ficheiros ***");
-            System.out.println("*** 2. Consultar Total de Vendas ***");
-            System.out.println("*** 3. Consultar Total de Lucro ***");
-            System.out.println("*** 4. Pesquisar Clientes ***");
-            System.out.println("*** 5. Jogo Mais Caro ***");
-            System.out.println("*** 6. Melhores Clientes ***");
-            System.out.println("*** 7. Melhor Categoria ***");
-            System.out.println("*** 8. Pesquisar por Vendas ***");
-            System.out.println("*** 9. Top 5 Jogos ***");
-            System.out.println("*** 10. Bottom 5 Jogos ***");
-            System.out.println("*** 11. Sair ***");
-
-
-            System.out.print("\nO que deseja fazer?: ");
-            opcao = input.nextInt();
-
+            //Ler Tipo de Utilizador no Menu Login
+            System.out.println("\nEscolha qual o tipo de utilizador com que vai entrar:");
 
             //Apresentar as opções
-            switch (opcao) {
-                case 1:
-                    System.out.println("\n*** 1. Consultar Ficheiros ***");
+            System.out.println("1 - ADMINISTRADOR\n2 - CLIENTE\n3 - SAIR\n");
+            System.out.print("Resposta: ");
+            utilizador = input.nextInt();
+
+            switch (utilizador) {
+
+                case 1: //Apresentar Menu de Administrador
+
+                    System.out.println("\nBem-vindo de volta Chefe\n");
+
+                    //Ler Opções Menu Administrador
+                    System.out.println("*** 1. Consultar Ficheiros ***");
+                    System.out.println("*** 2. Consultar Total de Vendas ***");
+                    System.out.println("*** 3. Consultar Total de Lucro ***");
+                    System.out.println("*** 4. Pesquisar Clientes ***");
+                    System.out.println("*** 5. Jogo Mais Caro ***");
+                    System.out.println("*** 6. Melhores Clientes ***");
+                    System.out.println("*** 7. Melhor Categoria ***");
+                    System.out.println("*** 8. Pesquisar por Vendas ***");
+                    System.out.println("*** 9. Top 5 Jogos ***");
+                    System.out.println("*** 10. Bottom 5 Jogos ***");
+                    System.out.println("*** 11. Sair ***");
+
+
+                    System.out.print("\nO que deseja fazer?: ");
+                    opcao = input.nextInt();
+
+
+                    //Apresentar as opções
+                    switch (opcao) {
+                        case 1:
+                            System.out.println("\n*** 1. Consultar Ficheiros ***");
+
+                            do {
+                                System.out.println("\nTem as seguintes opções para escolher.\n");
+
+                                System.out.println("1. Vendas");
+                                System.out.println("2. Clientes");
+                                System.out.println("3. Categorias");
+                                System.out.println("4. Sair\n");
+                                System.out.print("\nQual o ficheiro que pretende consultar? ");
+                                escolhaFicheiro = input.nextInt();
+
+                                switch (escolhaFicheiro) {
+                                    case 1:
+
+                                        //Imprimir ficheiro de Vendas
+
+                                        imprimirFicheiroConsola("GameStart/GameStart_Vendas.csv");
+                                        break;
+
+                                    case 2:
+
+                                        //Imprimir ficheiro de Clientes
+
+                                        imprimirFicheiroConsola("GameStart/GameStart_Clientes.csv");
+                                        break;
+
+                                    case 3:
+
+                                        //Imprimir ficheiro de Categorias
+
+                                        imprimirFicheiroConsola("GameStart/GameStart_Categorias.csv");
+                                        break;
+
+
+                                    case 4:
+
+                                        System.out.println("4. Sair\n");
+                                        break;
+
+                                }
+
+                            } while (escolhaFicheiro != 4);
+
+                            //Imprimir ficheiro de Copyright
+
+                            imprimirFicheiroConsola("GameStart/GameStart_Copyright.txt");
+
+                            break;
+
+                        case 2:
+                            System.out.println("\n*** 2. Consultar Total de Vendas ***");
+
+                            int  nLinhas;
+
+                            nLinhas = contarLinhasFicheiro ("GameStart/GameStart_Vendas.csv");
+
+
+                            System.out.println("Foram feitas " + nLinhas  + " vendas");
+                            somarValorTotal("GameStart/GameStart_Vendas.csv");
+
+                            break;
+
+                        case 3:
+                            System.out.println("\n*** 3. Consultar Total de Lucro ***");
+                            break;
+
+                        case 4:
+                            System.out.println("\n*** 4. Pesquisar Clientes ***");
+                            break;
+
+                        case 5:
+                            System.out.println("\n*** 5. Jogo Mais Caro ***");
+
+                            jogoMaisCaro("GameStart/GameStart_Vendas.csv");
+
+                            break;
+
+                        case 6:
+                            System.out.println("\n*** 6. Melhores Clientes ***");
+                            break;
+
+                        case 7:
+                            System.out.println("\n*** 7. Melhor Categoria ***");
+                            break;
+
+                        case 8:
+                            System.out.println("\n*** 8. Pesquisar por Vendas ***");
+                            break;
+
+                        case 9:
+                            System.out.println("\n*** 9. Top 5 Jogos ***");
+                            break;
+
+                        case 10:
+                            System.out.println("\n*** 10. Bottom 5 Jogos ***");
+                            break;
+
+                        case 11:
+                            System.out.println("\n*** 11. Obrigado e bom descanso! ***");
+                            break;
+
+                        default:
+                            System.out.println("\nErro!!! Operação inválida!\n");
+                            break;
+                    }
+                    while (opcao != 11);
+
+
                     break;
 
-                case 2:
-                    System.out.println("\n*** 2. Consultar Total de Vendas ***");
+                case 2: //Apresentar Menu de Cliente
+
+                    System.out.println("\nOlá e Bem-Vindo\n");
+
+                    //Ler Opções Menu Cliente
+                    System.out.println("*** 1. Novo Registo ***");
+                    System.out.println("*** 2. Procurar Estacionamento ***");
+                    System.out.println("*** 3. Catálogo de Jogos ***");
+                    System.out.println("*** 4. Pré-Visualizar ***");
+                    System.out.println("*** 5. Mostrar por Editora ***");
+                    System.out.println("*** 6. Mostrar por Categoria ***");
+                    System.out.println("*** 7. Recém-Chegado ***");
+                    System.out.println("*** 8. Sair ***");
+
+                    //Perguntar o que deseja fazer
+                    System.out.print("\nO que deseja fazer?: ");
+                    opcao = input.nextInt();
+
+
+                    //Escolher a opções
+                    switch (opcao) {
+                        case 1:
+                            System.out.println("\n*** 1. Novo Registo ***");
+
+                            long contacto;
+                            String nome = "", email = "";
+
+                            System.out.println("Por favor, insira os seus dados nos respetivos campos:\n");
+
+                            System.out.print("Nome: ");
+                            nome = input.next();
+
+                            System.out.print("Email: ");
+                            email = input.next();
+
+                            System.out.print("Contacto Telefónico: ");
+                            contacto = input.nextLong();
+
+                            System.out.println("\nCliente registado com sucesso\n");
+                            System.out.println(nome + " | " + email + " | " + contacto);
+
+                            break;
+
+                        case 2:
+                            System.out.println("\n*** 2. Procurar Estacionamento ***");
+                            break;
+
+                        case 3:
+                            System.out.println("\n*** 3. Catálogo de Jogos ***");
+                            break;
+
+                        case 4:
+                            System.out.println("\n*** 4. Pré-Visualizar ***");
+
+
+                            System.out.println("Aqui podes ver as capas dos seguintes jogos:");
+
+
+                            do {
+                                System.out.println("\nTem as seguintes opções para escolher.\n");
+
+                                System.out.println("1. Call Of Duty");
+                                System.out.println("2. Fifa");
+                                System.out.println("3. Hollow Knight");
+                                System.out.println("4. Minecraft");
+                                System.out.println("5. Mortal Kombat");
+                                System.out.println("6. Overcooked");
+                                System.out.println("7. The Witcher 3");
+                                System.out.println("8. Sair\n");
+                                System.out.print("\nQual o ficheiro que pretende consultar? ");
+                                escolhaFicheiro = input.nextInt();
+
+                                switch (escolhaFicheiro) {
+                                    case 1:
+
+                                        //Imprimir ficheiro de Call Of Duty
+
+                                        imprimirFicheiroConsola("GameStart/CatalogoGrafico/callOfDuty.txt");
+                                        break;
+
+                                    case 2:
+
+                                        //Imprimir ficheiro de Fifa
+
+                                        imprimirFicheiroConsola("GameStart/CatalogoGrafico/fifa.txt");
+                                        break;
+
+                                    case 3:
+
+                                        //Imprimir ficheiro de Hollow Knight
+
+                                        imprimirFicheiroConsola("GameStart/CatalogoGrafico/hollowKnight.txt");
+                                        break;
+
+                                    case 4:
+
+                                        //Imprimir ficheiro de Minecraft
+
+                                        imprimirFicheiroConsola("GameStart/CatalogoGrafico/minecraft.txt");
+                                        break;
+
+                                    case 5:
+
+                                        //Imprimir ficheiro de MortalKombat
+
+                                        imprimirFicheiroConsola("GameStart/CatalogoGrafico/mortalKombat.txt");
+                                        break;
+
+                                    case 6:
+
+                                        //Imprimir ficheiro de Overcooked
+
+                                        imprimirFicheiroConsola("GameStart/CatalogoGrafico/overcooked.txt");
+                                        break;
+
+                                    case 7:
+
+                                        //Imprimir ficheiro de The Witcher 3
+
+                                        imprimirFicheiroConsola("GameStart/CatalogoGrafico/witcher3.txt");
+                                        break;
+
+
+                                    case 8:
+
+                                        System.out.println("8. Sair\n");
+                                        System.out.println("Obrigado e até à prõxima");
+                                        break;
+
+                                }
+
+                            } while (escolhaFicheiro != 8);
+
+                            //Imprimir ficheiro de Copyright
+
+                            imprimirFicheiroConsola("GameStart/GameStart_Copyright.txt");
+
+
+                            break;
+
+                        case 5:
+                            System.out.println("\n*** 5. Mostrar por Editora ***");
+                            System.out.println("Que Editora deseja pesquisar?: ");
+                            editora = input.nextLine();
+                            //editora = input.nextLine();
+
+                            pesquisarPorEditora(matrizFicheiro, editora);
+
+                            imprimirFicheiroConsola("GameStart/GameStart_Vendas.csv");
+
+                            break;
+
+                        case 6:
+                            System.out.println("\n*** 6. Mostrar por Categoria ***");
+                            break;
+
+                        case 7:
+                            System.out.println("\n*** 7. Recém-Chegado ***");
+                            break;
+
+                        case 8:
+                            System.out.println("\n*** 8. Obrigado e volte sempre! ***");
+                            break;
+
+                        default:
+                            System.out.println("\nErro!!! Operação inválida!\n");
+                            break;
+                    }
+                    while (opcao != 8) ;
+
                     break;
 
                 case 3:
-                    System.out.println("\n*** 3. Consultar Total de Lucro ***");
+                    System.out.println("Sair");
+                    System.out.println("\n*** Obrigado e Até à Próxima! ***\n");
                     break;
 
-                case 4:
-                    System.out.println("\n*** 4. Pesquisar Clientes ***");
-                    break;
-
-                case 5:
-                    System.out.println("\n*** 5. Jogo Mais Caro ***");
-                    break;
-
-                case 6:
-                    System.out.println("\n*** 6. Melhores Clientes ***");
-                    break;
-
-                case 7:
-                    System.out.println("\n*** 7. Melhor Categoria ***");
-                    break;
-
-                case 8:
-                    System.out.println("\n*** 8. Pesquisar por Vendas ***");
-                    break;
-
-                case 9:
-                    System.out.println("\n*** 9. Top 5 Jogos ***");
-                    break;
-
-                case 10:
-                    System.out.println("\n*** 10. Bottom 5 Jogos ***");
-                    break;
-
-                case 11:
-                    System.out.println("\n*** 11. Obrigado e Até à Próxima ***");
-                    break;
 
                 default:
-                    System.out.println("\nErro!!! Operação inválida!\n");
-                    break;
+                    System.out.println("\nErro! Utilizador não encontrado! Tenta outra vez");
+
             }
-        } while (opcao != 11);
+
+        } while (utilizador != 3);
 
 
-        int nLinhas;
+        //Imprimir ficheiro de Copyright
 
-        nLinhas = contarLinhasFicheiro ("GameStart");
-
-        System.out.println("Número de Linhas: " + nLinhas);
-
+            imprimirFicheiroConsola("GameStart/GameStart_Copyright.txt");
 
     }
 }
