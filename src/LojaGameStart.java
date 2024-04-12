@@ -502,7 +502,7 @@ public class LojaGameStart {
 
                             break;
 
-                        case 5:
+                        case 5: //Não funciona e ainda não descobri porquê
                             System.out.println("\n*** 5. Mostrar por Editora ***");
                             System.out.println("Que Editora deseja pesquisar?: ");
                             editora = input.nextLine();

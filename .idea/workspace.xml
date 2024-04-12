@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="9a5ebc77-ef55-40bf-8612-40e712a3b00c" name="Changes" comment="Go" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="9a5ebc77-ef55-40bf-8612-40e712a3b00c" name="Changes" comment="Go">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Banner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LojaGameStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LojaGameStart.java" afterDir="false" />
+    </list>
+=======
+    <list default="true" id="9a5ebc77-ef55-40bf-8612-40e712a3b00c" name="Changes" comment="Go" />
+>>>>>>> ff4277e324c45f72db0a5219dd83d1058aeaa0f7
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +86,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+<<<<<<< Updated upstream
     &quot;last_opened_file_path&quot;: &quot;C:/Users/softdev/Desktop/Gilberto_Costa_Cesae/PE_GilbertoCosta&quot;
+=======
+<<<<<<< HEAD
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Desktop/Gilberto_Costa_Cesae/PE_GilbertoCosta&quot;
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/softdev/Desktop/Gilberto_Costa_Cesae/PE_GilbertoCosta&quot;
+>>>>>>> ff4277e324c45f72db0a5219dd83d1058aeaa0f7
+>>>>>>> Stashed changes
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
