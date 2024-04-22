@@ -1,0 +1,53 @@
+idIntervencao;idUtente;idResponsavel;tipoIntervencao;denominacao;valor;unidadeHospitalar
+int-00001;1;1;Ortopedia;Dedo Partido;9500;Porto
+int-00002;2;1;Ortopedia;Clavícula Fraturada;4950.90;Porto
+int-00003;3;2;Dermatologia;Acne;3200;Lisboa
+int-00004;4;2;Oftalmologia;Catarata;7600;Faro
+int-00005;5;3;Imunoalergologia;Teste de Alergias;1500;Aveiro
+int-00006;6;4;Pediatria;Bronquiolite;4500;Lisboa
+int-00007;7;5;Gastroenterologia;Colonoscopia;2250.75;Porto
+int-00008;8;1;Oftalmologia;Lasik;6700;Faro
+int-00009;9;2;Dermatologia;Psoríase;4900;Lisboa
+int-00010;10;6;Ortopedia;Joelho Reconstruído;11500;Aveiro
+int-00011;11;3;Gastroenterologia;Gastroenterite;3000;Lisboa
+int-00012;12;4;Pediatria;Vacinação;300;Faro
+int-00013;13;5;Imunoalergologia;Asma Severa;5500;Porto
+int-00014;14;1;Dermatologia;Remoção de Melanoma;8300;Lisboa
+int-00015;15;6;Oftalmologia;Correção de Astigmatismo;6250;Aveiro
+int-00016;16;7;Pediatria;Consulta de Desenvolvimento;180;Lisboa
+int-00017;17;8;Gastroenterologia;Endoscopia Digestiva;2650;Faro
+int-00018;18;9;Ortopedia;Cirurgia ao Tornozelo;9700;Porto
+int-00019;19;10;Dermatologia;Tratamento de Vitiligo;3600;Aveiro
+int-00020;20;2;Oftalmologia;Exame de Glaucoma;2800;Lisboa
+int-00021;21;11;Imunoalergologia;Desensibilização a Pólen;2200;Faro
+int-00022;22;12;Pediatria;Consulta de Nutrição Infantil;320;Porto
+int-00023;23;13;Gastroenterologia;Biopsia Hepática;3100;Lisboa
+int-00024;24;1;Ortopedia;Reabilitação de Fratura;7600;Faro
+int-00025;25;14;Dermatologia;Tratamento Laser para Cicatrizes;4550;Aveiro
+int-00026;26;15;Oftalmologia;Tratamento de Uveíte;5400;Porto
+int-00027;27;6;Pediatria;Tratamento de Otitis;700;Lisboa
+int-00028;28;7;Gastroenterologia;Cirurgia de Hernia;9100;Faro
+int-00029;29;8;Dermatologia;Consulta de Eczema;2000;Aveiro
+int-00030;30;9;Ortopedia;Artroscopia de Ombro;8400;Lisboa
+int-00031;31;10;Imunoalergologia;Imunoterapia para Insetos;3900;Porto
+int-00032;32;11;Oftalmologia;Tratamento de Retinopatia;7800;Faro
+int-00033;33;12;Pediatria;Tratamento para Varicela;1200;Aveiro
+int-00034;34;13;Gastroenterologia;Teste de Helicobacter Pylori;2500;Lisboa
+int-00035;35;14;Dermatologia;Tratamento para Alopecia;6600;Porto
+int-00036;1;1;Ortopedia;Consulta de Rotina;200;Porto
+int-00037;2;1;Ortopedia;Consulta de Acompanhamento;200;Porto
+int-00038;3;2;Dermatologia;Consulta de Avaliação;200;Lisboa
+int-00039;4;2;Oftalmologia;Consulta de Exames;200;Faro
+int-00040;5;3;Imunoalergologia;Consulta de Diagnóstico;200;Aveiro
+int-00041;6;4;Pediatria;Consulta de Emergência;200;Lisboa
+int-00042;7;5;Gastroenterologia;Consulta de Controlo;200;Porto
+int-00043;8;1;Oftalmologia;Consulta de Avaliação;200;Faro
+int-00044;9;2;Dermatologia;Consulta de Rotina;200;Lisboa
+int-00045;10;6;Ortopedia;Consulta de Diagnóstico;200;Aveiro
+int-00046;11;3;Gastroenterologia;Consulta de Emergência;200;Lisboa
+int-00047;12;4;Pediatria;Consulta de Controlo;200;Faro
+int-00048;13;5;Imunoalergologia;Consulta de Avaliação;200;Porto
+int-00049;14;1;Dermatologia;Consulta de Rotina;200;Lisboa
+int-00050;15;6;Oftalmologia;Consulta de Acompanhamento;200;Aveiro
+int-00051;2;1;Oftalmologia;Reconstrução de Vista;1800;Porto
+int-00052;2;1;Oftalmologia;Consulta de Acompanhamento;300;Porto

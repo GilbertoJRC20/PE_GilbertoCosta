@@ -1,0 +1,91 @@
+idUtente;nome;telemovel;email;dataNascimento;nacionalidade
+1;Vitor Santos;910000001;vitor.santos@gmail.com;01/01/1980;Portugal
+2;Luis Camoes;910000002;lusiadas@gmail.com;01/01/1524;Portugal
+3;Quim Barreiros;910000003;mestre.culinaria@gmail.com;19/06/1947;Portugal
+4;Vasco da Gama;910000004;around.the.world@gmail.com;ca. 1469;Portugal
+5;Cristiano Ronaldo;910000005;cr7@gmail.com;05/02/1985;Portugal
+6;Connor McGregor;910000006;notorious@gmail.com;14/07/1988;Irlanda
+7;James Bond;910000007;007@mi6.com;11/11/1920;Reino Unido
+8;Ana Santos;910000008;ana.santos@gmail.com;03/03/1990;Portugal
+9;J. R. R. Tolkien;910000009;lord.of.the.rings@myprecious.com;03/01/1892;Reino Unido
+10;Lewis Hamilton;910000010;2fast2u@mercedes.com;07/01/1985;Reino Unido
+11;Max Verstappen;910000011;gives.u.wings@redbull.com;30/09/1997;Holanda
+12;Mike Tyson;910000012;iron.mike@gmail.com;30/06/1966;EUA
+13;Freddie Mercury;910000013;bohemian.rapsody@gmail.com;05/09/1946;Reino Unido
+14;Elon Musk;910000014;elon.musk@tesla.com;28/06/1971;África do Sul
+15;Dwayne Johnson;910000015;the.rock@gmail.com;02/05/1972;EUA
+16;Afonso Henriques;910000016;rei.disto.tudo@mail.pt;25/07/1109;Portugal
+17;Manuel Costa;910000017;tio.manel@gmail.com;15/08/1975;Portugal
+18;Anita Larissa;912999888;funk@music.br;20/03/1997;Brasil
+19;Sir Francis Drake;910000019;treasure.hunter@gmail.com;ca. 1540;Reino Unido
+20;Ragnar Lothbrok;910000020;viking@gmail.com;ca. 845;Escandinávia
+21;Fernando Pessoa;910000021;alvaro.de.campos@gmail.com;13/06/1888;Portugal
+22;Amalia Rodrigues;910000022;fado@gmail.com;23/07/1920;Portugal
+23;Clint Eastwood;910000023;western@gmail.com;31/05/1930;EUA
+24;Chuck Norris;910000024;indestructible@gmail.com;10/03/1940;EUA
+25;Albert Einstein;910000025;mc2@gmail.com;14/03/1879;Alemanha
+26;Vin Diesel;910000026;fast.furious@gmail.com;18/07/1967;EUA
+27;Siza Vieira;910000027;arquitetura@gmail.com;25/06/1933;Portugal
+28;Bill Gates;910000028;billie@microsoft.com;28/10/1955;EUA
+29;Neymar Junior;910000029;neymar@gmail.com;05/02/1992;Brasil
+30;Robert Downey Jr.;910000030;ironman@gmail.com;04/04/1965;EUA
+31;Tiger Woods;910000031;golf.cart.driver@gmail.com;30/12/1975;EUA
+32;Mark Zuckerberg;910000032;not.a.lizard@facebook.com;14/05/1984;EUA
+33;Michael Jackson;910000033;eeh.eeh@gmail.com;29/08/1958;EUA
+34;Julius Ceasar;910000034;rome.is.mine@gmail.com;13/07/100 a.C.;Itália
+35;John Lennon;910000035;imagine@gmail.com;09/10/1940;Reino Unido
+36;J. K. Rowling;910000036;harry.potter@gmail.com;31/07/1965;Reino Unido
+37;Joaquim Alberto;910000037;sirene.bombeiros@gmail.com;15/05/1980;Portugal
+38;Gordon Ramsay;910000038;hells.kitchen@fword.com;08/11/1966;Reino Unido
+39;Ricardo Fazeres;910000039;riczao@gmail.com;22/04/1991;Portugal
+40;Ed Sheeran;910000040;shape.of.you@gmail.com;17/02/1991;Reino Unido
+41;Bruno Mars;910000041;lazy@gmail.com;08/10/1985;EUA
+42;Anderson Silva;910000043;the.spider@gmail.com;14/04/1975;Brasil
+43;Muhammad Ali;910000044;the.greatest@gmail.com;17/01/1942;EUA
+44;Napoleao Bonaparte;910000045;tall.guy@gmail.com;15/08/1769;França
+45;William Shakespeare;910000046;romeu.julieta@gmail.com;26/04/1564;Reino Unido
+46;Jon Snow;910000047;nightwatch@gmail.com;01/01/1980;Westeros
+47;Hermione Granger;910000048;hermione.granger@gmail.com;19/09/1979;Reino Unido
+48;Daenerys Targaryen;910000049;danny@gmail.com;01/01/1985;Westeros
+49;Henry Cavill;910000050;superman@gmail.com;05/05/1983;Reino Unido
+50;Sylvester Stallone;910000051;rambo@gmail.com;06/07/1946;EUA
+51;Arnold Schwarzenegger;910000052;terminator@gmail.com;30/07/1947;Áustria
+52;Bruce Wayne;910000053;batman@gmail.com;01/01/1980;EUA
+53;Hannibal Lecter;910000054;hannibal@gmail.com;01/01/1933;EUA
+54;Homer Simpson;910000055;homer@gmail.com;12/05/1956;EUA
+55;Sherlock Holmes;910000056;mrholmes@gmail.com;06/01/1854;Reino Unido
+56;Darth Vader;910000057;darkside@gmail.com;01/01/1980;EUA
+57;Luke Skywalker;910000058;vaderson@gmail.com;25/05/1977;Fictício
+58;Peter Parker;910000059;spiderman@gmail.com;10/08/1962;EUA
+59;Gandalf The Grey;910000060;wizard@gmail.com;01/01/3000 a.C.;Middle Earth
+60;Lara Croft;912333444;croft@gmail.com;14/02/1968;Reino Unido
+61;Marilyn Monroe;910000061;blonde.bombshell@gmail.com;01/06/1926;EUA
+62;Leonardo Da Vinci;910000062;renaissance.man@gmail.com;15/04/1452;Itália
+63;Ada Lovelace;910000063;first.programmer@gmail.com;10/12/1815;Reino Unido
+64;Steve Jobs;910000064;apple.innovator@gmail.com;24/02/1955;EUA
+65;Galileo Galilei;910000065;starry.messenger@gmail.com;15/02/1564;Itália
+66;Neil Armstrong;910000066;moon.walker@gmail.com;05/08/1930;EUA
+67;Charlie Chaplin;910000067;silent.film.star@gmail.com;16/04/1889;Reino Unido
+68;Marie Curie;910000068;radium@gmail.com;07/11/1867;Polônia
+69;Sigmund Freud;910000069;dream.analyst@gmail.com;06/05/1856;Áustria
+70;Alexander Hamilton;910000070;founding.father@gmail.com;11/01/1755;Caraíbas
+71;Bruce Lee;910000071;martial.arts.master@gmail.com;27/11/1940;EUA
+72;Margaret Thatcher;910000072;iron.lady@gmail.com;13/10/1925;Reino Unido
+73;Winston Churchill;910000073;vforvictory@gmail.com;30/11/1874;Reino Unido
+74;Michael Phelps;910000074;olympic.swimmer@gmail.com;30/06/1985;EUA
+75;Usain Bolt;910000075;fastest.man@gmail.com;21/08/1986;Jamaica
+76;Serena Williams;910000076;tennis.queen@gmail.com;26/09/1981;EUA
+77;Leonardo DiCaprio;910000077;titanic.star@gmail.com;11/11/1974;EUA
+78;Tom Hanks;910000078;forrest.gump@gmail.com;09/07/1956;EUA
+79;Stephen Hawking;910000079;black.holes@gmail.com;08/01/1942;Reino Unido
+80;Mozart;910000080;classical.genius@gmail.com;27/01/1756;Áustria
+81;Zezé Camarinha;910000081;macho.man.pt@gmail.com;02/03/1960;Portugal
+82;Quim Roscas;910000082;standup.pt@gmail.com;04/04/1975;Portugal
+83;Tino de Rans;910000083;presidente.rans@gmail.com;25/05/1969;Portugal
+84;Fernando Rocha;910000085;piadas.rocha@gmail.com;23/10/1975;Portugal
+85;Ruth Marlene;910000086;pimba.star@gmail.com;12/06/1976;Portugal
+86;Toy;910000087;estupidamente.apaixonado@gmail.com;10/08/1963;Portugal
+87;Nilton;910000094;telefonemas.nilton@gmail.com;17/04/1975;Portugal
+88;Jorge Jesus;910000088;treinador.mister@gmail.com;24/07/1954;Portugal
+89;Maria Leal;910000095;hits.verao@gmail.com;08/08/1980;Portugal
+90;Bruno Aleixo;910000096;conselheiro.aleixo@gmail.com;01/01/1970;Portugal
