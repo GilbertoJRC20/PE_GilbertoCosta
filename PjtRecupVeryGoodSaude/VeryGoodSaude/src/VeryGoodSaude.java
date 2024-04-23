@@ -1,8 +1,10 @@
-import java.nio.file.FileAlreadyExistsException;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+
 public class VeryGoodSaude {
-    public static void main(String[] args) throws FileAlreadyExistsException {
+    public static void main(String[] args) throws FileNotFoundException {
 
 
         //Saudação
@@ -78,13 +80,10 @@ public class VeryGoodSaude {
 
                             //Imprimir ficheiro de Copyright
 
-                            imprimirFicheiroConsola("GameStart/GameStart_Copyright.txt");
-
-                            break;
 
                         case 2:
                             System.out.println("\n*_*_*_* 2. Procurar Estacionamento *_*_*_*");
-                            
+
                             break;
 
                         case 3:
