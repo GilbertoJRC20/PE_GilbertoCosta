@@ -24,7 +24,7 @@ public class VeryGoodSaude {
             System.out.println("\nEscolha qual o tipo de utilizador com que vai entrar:");
 
             //Apresentar as opções
-            System.out.println("1 - CLIENTE\t|\t2 - MÉDICO\t|\t3 - ADMINISTRADORSAIR\t|\t4 - SAIR");
+            System.out.println("1 - CLIENTE\t|\t2 - MÉDICO\t|\t3 - ADMINISTRADOR\t|\t4 - SAIR");
             System.out.print("Resposta: ");
             utilizador = input.nextInt();
 
@@ -68,15 +68,16 @@ public class VeryGoodSaude {
                                         System.out.print("Insira Endereço de Email do Utente: ");
                                         email = input.next();
 
-                                        System.out.println("Insira a Data de Nascimento do Utente: ");
+                                        System.out.print("Insira a Data de Nascimento do Utente: ");
                                         dataDeNascimento = input.next();
 
-                                        System.out.println("Insira a Nacionalidade do Utente: ");
+                                        System.out.print("Insira a Nacionalidade do Utente: ");
                                         nacionalidade = input.next();
 
 
                                         System.out.println("\nCliente Inserido com Sucesso: " + nome + "\t|\t" + contacto + "\t|\t" + email + "\t|\t" + dataDeNascimento + "\t|\t" + nacionalidade);
 
+                                        break;
 
                             //Imprimir ficheiro de Copyright
 
