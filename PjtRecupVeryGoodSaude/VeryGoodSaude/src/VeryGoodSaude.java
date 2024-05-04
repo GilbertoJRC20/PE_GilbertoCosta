@@ -16,7 +16,7 @@ public class VeryGoodSaude {
 
 
         //Declarar variáveis
-        int opcao, utilizador;
+        int opcaoCliente, opcaoMedico, opcaoAdmin, utilizador;
 
         do {
 
@@ -44,67 +44,69 @@ public class VeryGoodSaude {
 
                     System.out.print("\nO que deseja fazer?: ");
                     //Inserir a Opção
-                    opcao = input.nextInt();
+                    opcaoCliente = input.nextInt();
 
 
-                    //Apresentar as opções
-                    switch (opcao) {
-                        case 1: //Apresentar opção 1
-                            System.out.println("\n*_*_*_* 1. Novo Registo *_*_*_*");
+                         switch (opcaoCliente) {
+                             case 1: //Apresentar opção 1
+                                 System.out.println("\n*_*_*_* 1. Novo Registo *_*_*_*");
 
-                                        System.out.println("\n*_*_*_* Inserir Utente *_*_*_*");
+                                 System.out.println("\n*_*_*_* Inserir Utente *_*_*_*");
 
-                                        int contacto;
-                                        String nome = "", email = "", dataDeNascimento = "", nacionalidade = "";
+                                 int contacto;
+                                 String nome = "", email = "", dataDeNascimento = "", nacionalidade = "";
 
-                                        System.out.println("Por favor, insira os seus dados nos respetivos campos:\n");
+                                 System.out.println("Por favor, insira os seus dados nos respetivos campos:\n");
 
-                                        System.out.print("Insira Nome de Utente: ");
-                                        nome = input.next();
+                                 System.out.print("Insira Nome de Utente: ");
+                                 nome = input.next();
 
-                                        System.out.print("Insira o Contacto Telefónico do Utente: ");
-                                        contacto = input.nextInt();
+                                 System.out.print("Insira o Contacto Telefónico do Utente: ");
+                                 contacto = input.nextInt();
 
-                                        System.out.print("Insira Endereço de Email do Utente: ");
-                                        email = input.next();
+                                 System.out.print("Insira Endereço de Email do Utente: ");
+                                 email = input.next();
 
-                                        System.out.print("Insira a Data de Nascimento do Utente: ");
-                                        dataDeNascimento = input.next();
+                                 System.out.print("Insira a Data de Nascimento do Utente: ");
+                                 dataDeNascimento = input.next();
 
-                                        System.out.print("Insira a Nacionalidade do Utente: ");
-                                        nacionalidade = input.next();
-
-
-                                        System.out.println("\nCliente Inserido com Sucesso: " + nome + "\t|\t" + contacto + "\t|\t" + email + "\t|\t" + dataDeNascimento + "\t|\t" + nacionalidade);
-
-                                        break;
-
-                            //Imprimir ficheiro de Copyright
+                                 System.out.print("Insira a Nacionalidade do Utente: ");
+                                 nacionalidade = input.next();
 
 
-                        case 2:
-                            System.out.println("\n*_*_*_* 2. Procurar Estacionamento *_*_*_*");
+                                 System.out.println("\nCliente Inserido com Sucesso: " + nome + "\t|\t" + contacto + "\t|\t" + email + "\t|\t" + dataDeNascimento + "\t|\t" + nacionalidade);
 
-                            break;
+                                 break;
 
-                        case 3:
-                            System.out.println("\n*_*_*_* 3. Consultar Tabela de Preços *_*_*_*");
-                            break;
+                             //Imprimir ficheiro de Copyright
 
-                        case 4:
-                            System.out.println("\n*_*_*_* 4. Consultar Catálogo de Interveções *_*_*_*");
-                            break;
 
-                        case 5:
-                            System.out.println("\n*_*_*_* 5. Sair *_*_*_*");
-                            System.out.println("\n*_*_*_* 11. Obrigado e volte sempre! *_*_*_*");
-                            break;
+                             case 2:
+                                 System.out.println("\n*_*_*_* 2. Procurar Estacionamento *_*_*_*");
 
-                        default:
-                            System.out.println("\nErro!!! Opção não existe!\n");
-                            break;
+                                 break;
 
-                    } while (opcao != 5);
+                             case 3:
+                                 System.out.println("\n*_*_*_* 3. Consultar Tabela de Preços *_*_*_*");
+                                 break;
+
+                             case 4:
+                                 System.out.println("\n*_*_*_* 4. Consultar Catálogo de Interveções *_*_*_*");
+                                 break;
+
+                             case 5:
+                                 System.out.println("\n*_*_*_* 5. Sair *_*_*_*");
+                                 System.out.println("\n*_*_*_* 11. Obrigado e volte sempre! *_*_*_*");
+                                 break;
+
+                             default:
+                                 System.out.println("\nErro!!! Opção não existe!\n");
+                                 break;
+
+                         }
+                         while (opcaoCliente != 5) ;
+
+
 
 
 
@@ -118,11 +120,11 @@ public class VeryGoodSaude {
 
                     //Perguntar o que deseja fazer
                     System.out.print("\nO que deseja fazer Doutor?: ");
-                    opcao = input.nextInt();
+                    opcaoMedico = input.nextInt();
 
 
                     //Escolher a opções
-                    switch (opcao) {
+                    switch (opcaoMedico) {
                         case 1:
                             System.out.println("\n*_*_*_* 1. Histórico de Utentes *_*_*_*");
                             break;
@@ -139,7 +141,7 @@ public class VeryGoodSaude {
                             System.out.println("\nErro!!! Opção não existe!\n");
                             break;
 
-                    } while (opcao != 3);
+                    } while (opcaoMedico != 3);
 
 
                 case 3: // Apresentar Menu de Administrador
@@ -160,10 +162,10 @@ public class VeryGoodSaude {
 
                     //Perguntar o que deseja fazer
                     System.out.print("\nO que deseja fazer Chefe?: ");
-                    opcao = input.nextInt();
+                    opcaoAdmin = input.nextInt();
 
                     //Escolher a opções
-                    switch (opcao) {
+                    switch (opcaoAdmin) {
                         case 1:
                             System.out.println("\n*_*_*_* 1. Histórico de Utentes *_*_*_*");
                             break;
@@ -212,7 +214,7 @@ public class VeryGoodSaude {
                             System.out.println("\nErro!!! Opção não existe!\n");
                             break;
 
-                    } while (opcao != 11);
+                    } while (opcaoAdmin != 11);
 
                 default:
                     System.out.println("\nErro! Utilizador não encontrado! Tenta outra vez");
