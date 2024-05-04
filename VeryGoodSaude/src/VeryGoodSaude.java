@@ -2,8 +2,26 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-
 public class VeryGoodSaude {
+
+    public static void leitorDeFicheiros() throws FileNotFoundException {
+
+        Scanner in = new Scanner( new File("Ficheiros/VeryGoodSaude_Copyright"));
+
+        String linha = in.nextLine(); //linha do cabecalho
+
+        while (in.hasNextLine()) {
+            linha = in.nextLine();
+            System.out.println(linha);
+        }
+
+        in.close();
+    }
+
+
+
+
+
     public static void main(String[] args) throws FileNotFoundException {
 
 
@@ -16,7 +34,7 @@ public class VeryGoodSaude {
 
 
         //Declarar variáveis
-        int opcaoCliente, opcaoMedico, opcaoAdmin, utilizador;
+        int opcao, utilizador;
 
         do {
 
@@ -44,10 +62,9 @@ public class VeryGoodSaude {
 
                     System.out.print("\nO que deseja fazer?: ");
                     //Inserir a Opção
-                    opcaoCliente = input.nextInt();
+                    opcao = input.nextInt();
 
-
-                         switch (opcaoCliente) {
+                         switch (opcao) {
                              case 1: //Apresentar opção 1
                                  System.out.println("\n*_*_*_* 1. Novo Registo *_*_*_*");
 
@@ -73,13 +90,11 @@ public class VeryGoodSaude {
                                  System.out.print("Insira a Nacionalidade do Utente: ");
                                  nacionalidade = input.next();
 
-
                                  System.out.println("\nCliente Inserido com Sucesso: " + nome + "\t|\t" + contacto + "\t|\t" + email + "\t|\t" + dataDeNascimento + "\t|\t" + nacionalidade);
 
-                                 break;
 
-                             //Imprimir ficheiro de Copyright
-
+                                    //Imprimir ficheiro de Copyright
+                            break;
 
                              case 2:
                                  System.out.println("\n*_*_*_* 2. Procurar Estacionamento *_*_*_*");
@@ -103,10 +118,8 @@ public class VeryGoodSaude {
                                  System.out.println("\nErro!!! Opção não existe!\n");
                                  break;
 
-                         }
-                         while (opcaoCliente != 5) ;
 
-
+                         } while (opcao != 5) ;
 
 
 
@@ -120,11 +133,11 @@ public class VeryGoodSaude {
 
                     //Perguntar o que deseja fazer
                     System.out.print("\nO que deseja fazer Doutor?: ");
-                    opcaoMedico = input.nextInt();
+                    opcao = input.nextInt();
 
 
                     //Escolher a opções
-                    switch (opcaoMedico) {
+                    switch (opcao) {
                         case 1:
                             System.out.println("\n*_*_*_* 1. Histórico de Utentes *_*_*_*");
                             break;
@@ -141,7 +154,7 @@ public class VeryGoodSaude {
                             System.out.println("\nErro!!! Opção não existe!\n");
                             break;
 
-                    } while (opcaoMedico != 3);
+                    } while (opcao != 3);
 
 
                 case 3: // Apresentar Menu de Administrador
@@ -162,10 +175,10 @@ public class VeryGoodSaude {
 
                     //Perguntar o que deseja fazer
                     System.out.print("\nO que deseja fazer Chefe?: ");
-                    opcaoAdmin = input.nextInt();
+                    opcao = input.nextInt();
 
                     //Escolher a opções
-                    switch (opcaoAdmin) {
+                    switch (opcao) {
                         case 1:
                             System.out.println("\n*_*_*_* 1. Histórico de Utentes *_*_*_*");
                             break;
@@ -214,7 +227,7 @@ public class VeryGoodSaude {
                             System.out.println("\nErro!!! Opção não existe!\n");
                             break;
 
-                    } while (opcaoAdmin != 11);
+                    } while (opcao != 11);
 
                 default:
                     System.out.println("\nErro! Utilizador não encontrado! Tenta outra vez");
@@ -226,5 +239,9 @@ public class VeryGoodSaude {
 
         System.out.println("\n*_*_*_* Obrigado e Até à Próxima! *_*_*_*\n");
 
+
+        leitorDeFicheiros();
+
     }
+
 }
